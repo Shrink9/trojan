@@ -12,7 +12,7 @@
       1. 需要一个应用来负责给V2RayN返回动态端口（参考本项目代码）
    
       2. V2RayN操作如下
-          ![](N$@}$9BAFBCN92P]]7{5YVS.png)
+          ![](doc/N$@}$9BAFBCN92P]]7{5YVS.png)
    
            > 其中填的Url： http://应用的ip:port?userId=xxxxx，其中userId值为trojan用户订阅链接base64编码之后的值。
 
