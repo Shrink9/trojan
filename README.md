@@ -21,13 +21,3 @@
       ```sh
       iptables -t nat -A PREROUTING -p tcp --dport 10000:50000 -j REDIRECT --to-ports 8085
       ```
-      
-      
-   
-   
-
-
-
-- 
-
-- 
