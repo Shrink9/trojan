@@ -1,6 +1,6 @@
 > 本项目是在https://github.com/Jrohy/trojan 基础之上做的
 # 搭建trojan服务端流程注意点：
-1. 用cloudflare warp分流以访问chatgpt，参考链接： https://p3terx.com/archives/cloudflare-warp-configuration-script.html 。
+1. 用cloudflare warp分流以访问ChatGPT，参考链接： https://p3terx.com/archives/cloudflare-warp-configuration-script.html 。
 
 2. 为了防止gfw屏蔽端口，使用动态端口的办法：
 
