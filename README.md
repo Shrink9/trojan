@@ -15,16 +15,17 @@
 
           1. 端口就是随机生成一个10000-50000之间的端口
 
-          2. 域名：把域名存放在数据库里，每次请求过来都从数据库里读取多个域名，然后随机选择一个作为目标域名。
+          2. 域名：把域名存放在[数据库](https://github.com/Shrink9/trojan/blob/master/sql/ddl.sql '点击跳转到sql文件')里，每次请求过来都从数据库里读取多个域名，然后随机选择一个作为目标域名。
 
               > 前提：域名要能解析到VPS且要在trojan配置文件中指定域名对应的证书路径
+
 
       2. V2RayN操作如下
           ![](https://shrink.fun/resource/V2RayN.png)
 
            > 其中填的Url： http://应用的ip:port?userId=xxxxx，其中userId值为trojan用户订阅链接base64编码之后的值。
 
-   2. 服务端转发（10000-50000转发到trojan运行端口8085），这样V2RayN访问10000-50000端口的时候会被转发到8085端口以被trojan接收。
+   1. 服务端转发（10000-50000转发到trojan运行端口8085），这样V2RayN访问10000-50000端口的时候会被转发到8085端口以被trojan接收。
 
       ```sh
       iptables -t nat -A PREROUTING -p tcp --dport 10000:50000 -j REDIRECT --to-ports 8085
