@@ -3,3 +3,5 @@ server:
 logging:
   level:
     work.shrink.portupdater2: info
+spring:
+  mysql:
