@@ -20,7 +20,7 @@
               > 前提：域名要能解析到VPS且要在trojan配置文件中指定域名对应的证书路径
 
       2. V2RayN操作如下
-          ![](doc/N$@}$9BAFBCN92P]]7{5YVS.png)
+          ![](doc/V2RayN.png)
 
            > 其中填的Url： http://应用的ip:port?userId=xxxxx，其中userId值为trojan用户订阅链接base64编码之后的值。
 
